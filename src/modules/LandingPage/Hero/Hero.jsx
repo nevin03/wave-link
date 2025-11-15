@@ -1,7 +1,7 @@
 "use client";
 
 import TextHeading from "@/components/TextHeading/TextHeading";
-import Button from "@/Shared/Components/Button";
+import Button from "@/shared/components/Button";
 import LandingImage from "@/components/LandingImage/LandingImage";
 
 export default function Hero() {

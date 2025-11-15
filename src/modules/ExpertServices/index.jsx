@@ -3,55 +3,44 @@
 import React from "react";
 import Typography from "@/Shared/Components/Typography";
 import ImageCard from "@/Shared/Components/ImageCard";
-import Button from "@/Shared/Components/Button";
+import ConsultingExpertise from "./ConsultingExpertise";
+import expertImages from "@/data/expertImages";
 
 const ExpertServices = () => {
-  const images = [
-    "/chef-imgs.png",
-    "/chef-imgs.png",
-    "/chef-imgs.png",
-    "/chef-imgs.png",
-  ];
-
   return (
-    <div className="bg-white relative">
-      {/* Pill label */}
-      <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-        <span className="bg-gray-800 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg cursor-pointer hover:bg-gray-600 transition-colors">
-          Expert Services
-        </span>
-      </div>
-<Button variant="orange">
-  Visit Website
-</Button>
+    <div className="bg-white relative py-16">
+      <div className="relative flex flex-col items-center gap-4">
+        <div className="bg-white border border-[#C6853F] px-6 py-2 rounded-full shadow-sm cursor-default">
+          <Typography variant="content2" className="text-[#C6853F] font-semibold">
+            What keeps us on Top
+          </Typography>
+        </div>
 
-      <div className="max-w-6xl mx-auto text-center mt-6 mb-0">
         <Typography
           variant="heading2"
           text="Our Expert Services"
-          className="text-black"
+          className="text-center mt-4 text-[#C6853F]"
         />
       </div>
 
-      {/* Images grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2">
-        {images.map((img, idx) => (
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-8">
+        {expertImages.map((img, idx) => (
           <div
             key={idx}
-            className={`flex ${
-              idx % 2 === 0 ? "justify-start" : "justify-end"
-            }`}
+            className={`flex ${idx % 2 === 0 ? "justify-start" : "justify-end"}`}
           >
             <ImageCard
-              image={img}
-              title={`Service ${idx + 1}`}
-              content={`Description for service ${idx + 1}`}
+              image={img.src}
+              title={img.title}
+              content={img.content}
               height="300px"
-              className="w-full md:w-full" // full width, no gaps
+              className="w-full md:w-full"
             />
           </div>
         ))}
       </div>
+
+      <ConsultingExpertise />
     </div>
   );
 };
