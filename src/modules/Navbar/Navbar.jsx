@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link"; // Import Link
-import Button from "@/shared/Button";
+import Link from "next/link";
+import Button from "@/Shared/Components/Button";
 
 export default function Navbar() {
   return (
