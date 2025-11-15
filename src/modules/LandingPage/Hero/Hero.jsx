@@ -1,7 +1,7 @@
 "use client";
 
 import TextHeading from "@/components/TextHeading/TextHeading";
-import Button from "@/shared/Button";
+import Button from "@/Shared/Components/Button";
 import LandingImage from "@/components/LandingImage/LandingImage";
 
 export default function Hero() {
@@ -40,20 +40,18 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex gap-4 flex-wrap">
             <Button
-              variant="filled"
               loading={false}
               loadingText="Loading..."
               radius="full"
-              className="bg-orange-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-orange-500 transition-all duration-300 hover:scale-105 backdrop-blur-sm"
+              variant="orange"
             >
               Free Consultation
             </Button>
             <Button
-              variant="outline"
+              variant="orange-outline"
               loading={false}
               loadingText="Loading..."
               radius="full"
-              className="border-2 border-orange-400/50 text-orange-400 px-8 py-3 rounded-full font-semibold hover:bg-orange-400 hover:text-black hover:border-orange-400 transition-all duration-300 hover:scale-105 backdrop-blur-sm"
             >
               Get in touch
             </Button>
