@@ -1,15 +1,13 @@
 import React from "react";
-import Typography from "@/Shared/Components/Typography";
-import Cards from "@/Shared/Components/Cards";
-import { TickIcon, PlusIcon } from "@/Shared/Components/Icons";
+import Typography from "@/shared/components/Typography";
+import Cards from "@/shared/components/Cards";
+import { TickIcon, PlusIcon } from "@/shared/components/Icons";
 
 const ConsultingExpertise = () => {
   return (
     <div className="bg-[#FFF8ED] mt-12 md:mt-16 py-12 md:py-16 p-5">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-8 px-4 sm:px-6">
-        {/* Left Column */}
         <div className="w-full lg:w-1/2 flex flex-col gap-6">
-          {/* Main Heading */}
           <Typography
             variant="heading2"
             className="text-gray-900 leading-snug text-3xl sm:text-4xl lg:text-5xl"
@@ -19,7 +17,6 @@ const ConsultingExpertise = () => {
             That Drives Real Growth
           </Typography>
 
-          {/* Main Content */}
           <Typography
             variant="content1"
             className="text-gray-800 text-base sm:text-lg"
@@ -28,7 +25,6 @@ const ConsultingExpertise = () => {
             deliver measurable impact. Our clients choose us because.
           </Typography>
 
-          {/* Mission Section */}
           <div className="relative flex items-start gap-2 mt-6">
             <TickIcon width={24} height={24} />
             <Typography
@@ -51,7 +47,6 @@ const ConsultingExpertise = () => {
             Our Mission is to empower frontline professionals with advanced thermal vision technology and high-definition imaging solutions. As we look to the future, we are committed to expanding our product range to include cutting-edge thermal cameras for drones and other critical applications, ensuring our customers can effectively protect and serve their communities in any environment.
           </Typography>
 
-          {/* Vision Section */}
           <div className="relative flex items-start gap-2 mt-6">
             <TickIcon width={24} height={24} />
             <Typography
@@ -68,7 +63,6 @@ const ConsultingExpertise = () => {
           </div>
         </div>
 
-        {/* Right Column */}
         <div className="w-full lg:w-1/2 flex justify-center items-start">
           <Cards
             image="/consulting-exp-image.png"
