@@ -49,9 +49,9 @@ export default function Hero() {
             </Button>
             <Button
               variant="orange-outline"
-              loading={false}
+             loading={false}
               loadingText="Loading..."
-              radius="full"
+              radius="full" 
             >
               Get in touch
             </Button>
