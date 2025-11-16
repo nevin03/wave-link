@@ -53,3 +53,28 @@ export const PlusIcon = ({
     </svg>
   );
 };
+
+export const ArrowIcon = ({
+  width = 21,
+  height = 33,
+  fill = "#EB9A42",
+  className = "",
+  ...props
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 21 33"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path
+        d="M3.30596 0.505798L19.5993 14.7725C20.506 15.5725 20.506 16.9858 19.5993 17.7858L3.30596 32.0525C2.02596 33.1725 -0.000703812 32.2658 -0.000703812 30.5591V1.99913C-0.000703812 0.292464 2.02596 -0.640869 3.30596 0.505798Z"
+        fill={fill}
+      />
+    </svg>
+  );
+};
