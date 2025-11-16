@@ -7,7 +7,7 @@ const ServicesVideo = ({ src = "/videos/meeting-video.mp4" }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className="relative w-full mb-40">
+    <div className="relative w-full mb-20">
       <video
         src={src}
         muted
