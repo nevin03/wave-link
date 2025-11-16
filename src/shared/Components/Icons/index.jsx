@@ -131,7 +131,7 @@ export const MessageIcon = ({
       className={className}
       {...props}
     >
-      <g opacity="0.4">
+      <g opacity="1">
         <path
           d="M3.26953 7.28467L11.1139 11.7752C14.0058 13.4306 15.2276 13.4306 18.1196 11.7752L25.9639 7.28467"
           stroke="white"
