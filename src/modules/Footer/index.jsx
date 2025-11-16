@@ -5,12 +5,10 @@ const Footer = () => {
   return (
     <footer className="bg-[#171716] text-gray-300 py-12 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Logo & Tagline */}
         <div className="space-y-4">
           <div className="flex items-center space-x-2">
-            {/* Replace with your actual logo path */}
             <img
-              src="/logo.png" // Replace with your actual logo path
+              src="/logo.png"
               alt="Wavelink World Wide Logo"
               className="h-10 w-auto"
             />
@@ -21,7 +19,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h3 className="text-white font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
@@ -40,7 +37,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Resources */}
         <div>
           <h3 className="text-white font-semibold mb-4">Resources</h3>
           <ul className="space-y-2 text-sm">
@@ -59,7 +55,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Location & Contact */}
         <div className="space-y-4">
           <h3 className="text-white font-semibold mb-4">Location & Contact</h3>
           <div className="space-y-3 text-sm">
@@ -76,9 +71,6 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex items-center gap-2">
-              <span className="w-4 h-4 text-gray-500 flex-shrink-0 flex items-center justify-center">
-                [Phone]
-              </span>
               <a href="tel:+919539346373" className="hover:text-orange-400 transition">
                 +91 95393 46373
               </a>
@@ -87,7 +79,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
         <div className="flex space-x-4 mb-4 md:mb-0">
           <a href="#" className="hover:text-orange-400 transition">Facebook</a>
