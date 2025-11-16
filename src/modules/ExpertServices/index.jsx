@@ -5,6 +5,7 @@ import Typography from "@/Shared/Components/Typography";
 import ImageCard from "@/Shared/Components/ImageCard";
 import ConsultingExpertise from "./ConsultingExpertise";
 import expertImages from "@/data/expertImages";
+import ServicesVideo from "./ServicesVideo";
 
 const ExpertServices = () => {
   return (
@@ -23,11 +24,11 @@ const ExpertServices = () => {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
         {expertImages.map((img, idx) => (
           <div
             key={idx}
-            className={`flex ${idx % 2 === 0 ? "justify-start" : "justify-end"}`}
+            className={`flex ${idx % 2 === 0 ? "justify-start" : "justify-end"} rounded-2xl overflow-hidden`}
           >
             <ImageCard
               image={img.src}
@@ -41,6 +42,7 @@ const ExpertServices = () => {
       </div>
 
       <ConsultingExpertise />
+      <div className="bg-white"><ServicesVideo/></div>
     </div>
   );
 };
