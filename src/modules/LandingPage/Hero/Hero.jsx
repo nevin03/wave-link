@@ -5,7 +5,7 @@ import Button from "@/shared/components/Button";
 import LandingImage from "@/components/LandingImage/LandingImage";
 
 export default function Hero() {
-  const heroImageUrl = "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80";
+  const heroImageUrl = "/office.jpg";
 
   return (
     <div
