@@ -9,7 +9,7 @@ import ServicesVideo from "./ServicesVideo";
 
 const ExpertServices = () => {
   return (
-    <div className="bg-white relative py-16">
+    <div className="bg-white relative py-5">
       <div className="relative flex flex-col items-center gap-4">
         <div className="bg-white border border-[#C6853F] px-6 py-2 rounded-full shadow-sm cursor-default">
           <Typography variant="content2" className="text-[#C6853F] font-semibold">
@@ -24,7 +24,7 @@ const ExpertServices = () => {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
         {expertImages.map((img, idx) => (
           <div
             key={idx}
