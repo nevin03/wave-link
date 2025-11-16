@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Button from "@/shared/components/Button";
+import Button from "@/shared/Components/Button";
 
 export default function Navbar() {
   return (
@@ -40,14 +40,18 @@ export default function Navbar() {
       {/* Buttons */}
       <div className="flex items-center gap-4">
         <Button
-          variant="outline"
-          className="border-orange-400/70 text-orange-400 px-6 py-2 rounded-full hover:bg-orange-400 hover:text-black transition-all duration-300 font-semibold hover:shadow-lg hover:shadow-orange-500/30 hover:scale-105"
+          variant="orange-outline"
+          loading={false}
+          loadingText="Loading..."
+          radius="full"
+          size="sm"
         >
           Contact us
         </Button>
         <Button
           variant="filled"
           className="bg-gradient-to-r from-orange-400 to-amber-500 text-black px-6 py-2 rounded-full hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300 font-semibold hover:scale-105"
+          size="sm"
         >
           Free Consultation
         </Button>
