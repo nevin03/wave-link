@@ -1,11 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: "standalone",
 
-  reactCompiler: true,      // Correct placement (Next.js 16)
-  reactStrictMode: true,    // Good for production
-  compress: true,           // Gzip compression
-  poweredByHeader: false,   // Removes "X-Powered-By"
+  reactCompiler: true,
+  reactStrictMode: true,
+  compress: true,
+  poweredByHeader: false,
+
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      "@": "./src",
+    };
+
+    config.resolve.extensions.push(".js", ".jsx", ".ts", ".tsx");
+
+    return config;
+  },
 };
 
 export default nextConfig;
