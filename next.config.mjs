@@ -7,16 +7,12 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
 
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...(config.resolve.alias || {}),
+  // Fix alias for Turbopack (Next.js 16)
+  turbopack: {
+    resolveAlias: {
       "@": "./src",
-    };
-
-    config.resolve.extensions.push(".js", ".jsx", ".ts", ".tsx");
-
-    return config;
-  },
+    }
+  }
 };
 
 export default nextConfig;
