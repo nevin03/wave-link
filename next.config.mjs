@@ -1,18 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
+  output: 'standalone',
 
-  reactCompiler: true,
-  reactStrictMode: true,
-  compress: true,
-  poweredByHeader: false,
-
-  // Fix alias for Turbopack (Next.js 16)
-  turbopack: {
-    resolveAlias: {
-      "@": "./src",
-    }
-  }
+  reactCompiler: true,      // Correct placement (Next.js 16)
+  reactStrictMode: true,    // Good for production
+  compress: true,           // Gzip compression
+  poweredByHeader: false,   // Removes "X-Powered-By"
 };
 
 export default nextConfig;
