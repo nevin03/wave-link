@@ -1,6 +1,6 @@
 "use client"
 
-import CustomCard from '@/shared/components/CustomCard'
+import CustomCard from '@/shared/Components/CustomCard'
 import { MessageIcon } from '@/shared/components/Icons'
 import Typography from '@/shared/components/Typography'
 import { useRouter } from 'next/navigation'
@@ -24,9 +24,9 @@ const CounterLandingPage = () => {
       <div className="flex gap-6 flex-wrap justify-between">
         <CustomCard
         count="430+"
-        label="Active Clients"
+        label="Counters"
         TopIcon={MessageIcon}
-        bottomText="Explore"
+        bottomText="view more counters"
         link="/counters"  
         />
 
@@ -42,7 +42,7 @@ const CounterLandingPage = () => {
           count="$7.8M"
           label="Happy Clients"
           TopIcon={MessageIcon}
-          bottomText="View Testimonials"
+          bottomText="See Client Testimonials"
           onClick={() => console.log("Clicked")}
         />
 
