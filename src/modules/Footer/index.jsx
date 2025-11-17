@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "@/shared/components/Typography";
-import { MapsIcon, MessageIcon } from "@/shared/Components/Icons";
+import { MapsIcon, MessageIcon } from "@/shared/components/Icons";
 
 const Footer = () => {
   return (

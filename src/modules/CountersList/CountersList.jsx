@@ -1,7 +1,7 @@
 'use client';
 
-import Cards from "@/shared/Components/Cards";
-import Typography from "@/shared/Components/Typography";
+import Cards from "@/shared/components/Cards";
+import Typography from "@/shared/components/Typography";
 import { countersData } from "./dummyCounters";
 
 export default function CountersList() {
