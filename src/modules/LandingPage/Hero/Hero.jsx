@@ -8,11 +8,7 @@ export default function Hero() {
   const heroImageUrl = "/office.jpg";
 
   return (
-    <div
-      className="min-h-[calc(100vh-72px)] 
-      bg-[radial-gradient(800px_at_bottom_left,#2C1F05,rgba(0,0,0,0.95))]
-      text-white flex items-center overflow-hidden"
-    >
+    <div className="min-h-[calc(100vh-72px)] bg-[radial-gradient(800px_at_bottom_left,#2C1F05,rgba(0,0,0,0.95))] text-white flex items-center overflow-hidden">
       <div className="max-w-7xl mx-auto w-full px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="space-y-8 z-10">
@@ -49,9 +45,9 @@ export default function Hero() {
             </Button>
             <Button
               variant="orange-outline"
-             loading={false}
+              loading={false}
               loadingText="Loading..."
-              radius="full" 
+              radius="full"
             >
               Get in touch
             </Button>
