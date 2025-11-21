@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link"; // ← make sure this is imported
 import Typography from "@/shared/components/Typography";
-import { MapsIcon, MessageIcon } from "@/shared/Components/Icons";
+import { MapsIcon, MessageIcon } from "@/shared/components/Icons";
 
 const Footer = () => {
   return (
     <footer className="bg-[#171716] text-gray-300 py-12 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        
+
         <div className="space-y-4">
           <div className="flex items-center space-x-2">
             <img
