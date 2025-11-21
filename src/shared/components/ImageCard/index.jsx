@@ -4,9 +4,9 @@ import Button from "../Button";
 
 const ImageCard = ({
   image,
-  title = "Elevate your business with Businezz X",
-  content = "Grow faster with modern solutions tailored for smart brands.",
-  buttonText = "Visit Website",
+  title = "",
+  content = "",
+  buttonText = "",
   onButtonClick = () => {},
   className = "",
 }) => {
