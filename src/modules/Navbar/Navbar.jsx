@@ -53,7 +53,7 @@ export default function Navbar() {
           className="bg-gradient-to-r from-orange-400 to-amber-500 text-black px-6 py-2 rounded-full hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300 font-semibold hover:scale-105"
           size="sm"
         >
-          Free Consultation
+          Contact Us
         </Button>
       </div>
     </nav>
