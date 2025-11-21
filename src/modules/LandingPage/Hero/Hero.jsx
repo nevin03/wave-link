@@ -35,14 +35,14 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex gap-4 flex-wrap">
-            <Button
+            {/* <Button
               loading={false}
               loadingText="Loading..."
               radius="full"
               variant="orange"
             >
               Contact Us
-            </Button>
+            </Button> */}
             <Button
               variant="orange-outline"
               loading={false}
