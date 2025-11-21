@@ -1,6 +1,6 @@
 "use client"
 
-import CustomCard from '@/shared/components/CustomCard'
+import CustomCard from '../../../src/shared/components/CustomCard/index'
 import { MessageIcon } from '@/shared/components/Icons'
 import Typography from '@/shared/components/Typography'
 import { useRouter } from 'next/navigation'
