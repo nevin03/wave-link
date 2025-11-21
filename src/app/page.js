@@ -4,6 +4,7 @@ import Footer from "@/modules/Footer";
 import ProductImage from "@/modules/ProductImage";
 import ServicesVideo from "@/modules/ExpertServices/ServicesVideo";
 import CounterLandingPage from "@/modules/Counters";
+import Clients from "@/modules/Clients";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <LandingPage />
       <ExpertServices />
       <ProductImage/>
+      <Clients/>
       <CounterLandingPage/>
       <Footer/>
     </>
