@@ -4,7 +4,7 @@ import DiagonalArrowIcon from "../Icons";
 const Cards = ({
   image,
   className = "",
-  height = "300px",
+  height = "h-[300px]",
   bottomBox = null,
   showLearnMore = false,
   onLearnMore = null,
@@ -13,10 +13,8 @@ const Cards = ({
   return (
     <div className={`relative ${className}`}>
       <div
-        className={`relative rounded-xl overflow-visible ${
-          cardStyle === "counter-list" ? "border-0" : "border-4 border-[#dad9d4]"
-        }`}
-        style={{ height }}
+        className={`relative rounded-xl overflow-visible ${cardStyle === "counter-list" ? "border-0" : "border-4 border-[#dad9d4]"
+          } ${height}`}
       >
         <img
           src={image}
