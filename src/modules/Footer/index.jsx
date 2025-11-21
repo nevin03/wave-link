@@ -1,12 +1,14 @@
 import React from "react";
+import Link from "next/link";
 import Typography from "@/shared/components/Typography";
 import { MapsIcon, MessageIcon } from "@/shared/components/Icons";
 
 const Footer = () => {
   return (
     <footer className="bg-[#171716] text-gray-300 py-12 px-6 md:px-12 lg:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+        {/* Logo + About */}
         <div className="space-y-4">
           <div className="flex items-center space-x-2">
             <img
@@ -23,50 +25,26 @@ const Footer = () => {
 
           <Typography
             variant="body2"
-            className="text-gray-400 max-w-xs"
+            className="text-gray-400 max-w-xs leading-relaxed"
             text="Wavelink world wide empowers organizations with strategic consulting, deep insights, and proven solutions to thrive in an ever-changing world."
           />
         </div>
 
+        {/* Spacer - balances layout */}
+        <div className="hidden md:block"></div>
+
+        {/* Contact Us */}
         <div>
           <Typography
             variant="heading6"
             className="text-white font-semibold mb-4"
-            text="Quick Links"
-          />
-
-          <ul className="space-y-2 text-sm">
-            <li><a href="/" className="hover:text-orange-400 transition">Home</a></li>
-            <li><a href="/about" className="hover:text-orange-400 transition">About Us</a></li>
-            <li><a href="/services" className="hover:text-orange-400 transition">Services</a></li>
-            <li><a href="/case-studies" className="hover:text-orange-400 transition">Case Studies</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <Typography
-            variant="heading6"
-            className="text-white font-semibold mb-4"
-            text="Resources"
-          />
-
-          <ul className="space-y-2 text-sm">
-            <li><a href="/contact" className="hover:text-orange-400 transition">Contact Us</a></li>
-            <li><a href="/reviews" className="hover:text-orange-400 transition">Reviews</a></li>
-            <li><a href="/404" className="hover:text-orange-400 transition">404 Error</a></li>
-            <li><a href="/license" className="hover:text-orange-400 transition">License</a></li>
-          </ul>
-        </div>
-        <div className="space-y-4">
-          <Typography
-            variant="heading6"
-            className="text-white font-semibold mb-4"
-            text="Location & Contact"
+            text="Contact Us"
           />
 
           <div className="space-y-3 text-sm">
-            <div className="flex items-start gap-2">
-              <MapsIcon className="w-4 h-4mt-0.5 flex-shrink-0" />
+            {/* Address */}
+            <div className="flex items-start gap-3">
+              <MapsIcon className="w-4 h-4 mt-1 flex-shrink-0" />
               <Typography
                 variant="body2"
                 className="text-gray-400"
@@ -74,7 +52,8 @@ const Footer = () => {
               />
             </div>
 
-            <div className="flex items-center gap-2">
+            {/* Email */}
+            <div className="flex items-center gap-3">
               <MessageIcon className="w-4 h-4 flex-shrink-0" />
               <a
                 href="mailto:contact@vistara.com"
@@ -84,7 +63,8 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="flex items-center gap-2">
+            {/* Phone */}
+            <div className="flex items-center gap-3">
               <a
                 href="tel:+919539346373"
                 className="hover:text-orange-400 transition"
@@ -94,26 +74,46 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        {/* Social */}
+        <div>
+          <Typography
+            variant="heading6"
+            className="text-white font-semibold mb-4"
+            text="Follow Us"
+          />
+
+          <div className="space-y-2 text-sm">
+            <a href="#" className="hover:text-orange-400 transition block">
+              Facebook
+            </a>
+            <a href="#" className="hover:text-orange-400 transition block">
+              Instagram
+            </a>
+            <a href="#" className="hover:text-orange-400 transition block">
+              Thread
+            </a>
+          </div>
+        </div>
       </div>
 
+      {/* Bottom Bar */}
       <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-        
-        <div className="flex space-x-4 mb-4 md:mb-0">
-          <a href="#" className="hover:text-orange-400 transition">
-            <Typography variant="body2" text="Facebook" />
-          </a>
-          <a href="#" className="hover:text-orange-400 transition">
-            <Typography variant="body2" text="Instagram" />
-          </a>
-          <a href="#" className="hover:text-orange-400 transition">
-            <Typography variant="body2" text="Thread" />
-          </a>
-        </div>
 
+        {/* Left side */}
         <Typography
           variant="body2"
+          className="text-center md:text-left"
           text="© 2025 Wavelink World Wide. All rights reserved."
         />
+
+        {/* Right side */}
+        <Link
+          href="/terms-and-conditions"
+          className="hover:text-orange-400 transition mt-4 md:mt-0"
+        >
+          <Typography variant="body2" text="Terms & Conditions" />
+        </Link>
       </div>
     </footer>
   );

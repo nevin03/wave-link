@@ -1,5 +1,5 @@
 import React from 'react';
-import Typography from '@/shared/components/Typography';
+import Typography from '@/shared/components/Typography/index';
 
 export default function Counters() {
   return (

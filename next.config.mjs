@@ -1,22 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
+  output: 'standalone',
 
-  reactCompiler: true,
+  experimental: {
+    reactCompiler: true,  // Move inside experimental
+  },
+  
   reactStrictMode: true,
   compress: true,
   poweredByHeader: false,
-
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...(config.resolve.alias || {}),
-      "@": "./src",
-    };
-
-    config.resolve.extensions.push(".js", ".jsx", ".ts", ".tsx");
-
-    return config;
-  },
 };
 
 export default nextConfig;

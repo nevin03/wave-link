@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Typography from "@/Shared/components/Typography";
-import ImageCard from "@/Shared/components/ImageCard";
+import Typography from "@/shared/components/Typography/index";
+import ImageCard from "@/shared/components/ImageCard/index";
 import ConsultingExpertise from "./ConsultingExpertise";
 import expertImages from "@/data/expertImages";
 import ServicesVideo from "./ServicesVideo";
@@ -42,7 +42,7 @@ const ExpertServices = () => {
       </div>
 
       <ConsultingExpertise />
-      <div className="bg-white"><ServicesVideo/></div>
+      <div className="bg-white"><ServicesVideo /></div>
     </div>
   );
 };

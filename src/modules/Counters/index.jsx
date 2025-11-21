@@ -23,11 +23,11 @@ const CounterLandingPage = () => {
       {/* Cards */}
       <div className="flex gap-6 flex-wrap justify-between">
         <CustomCard
-        count="430+"
-        label="Counters"
-        TopIcon={MessageIcon}
-        bottomText="view more counters"
-        link="/counters"  
+          count="430+"
+          label="Counters"
+          TopIcon={MessageIcon}
+          bottomText="view more counters"
+          link="/counters"
         />
 
         <CustomCard

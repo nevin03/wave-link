@@ -1,7 +1,7 @@
 import React from "react";
-import Typography from "@/shared/components/Typography";
-import Cards from "@/shared/components/Cards";
-import { TickIcon, PlusIcon } from "@/shared/components/Icons";
+import Typography from "@/shared/components/Typography/index";
+import Cards from "@/shared/components/Cards/index";
+import { TickIcon, PlusIcon } from "@/shared/components/Icons/index";
 
 const ConsultingExpertise = () => {
   return (
