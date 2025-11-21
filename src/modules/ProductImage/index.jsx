@@ -13,52 +13,76 @@ const ProductImage = () => {
     {
       label: "Electronic Devices",
       content: (
-        <div className="relative flex items-center justify-center w-full mt-6 mb-40">
-          <div className="absolute left-20 z-10 cursor-pointer">
+        <div className="relative w-full mt-6 mb-24">
+          {/* LEFT ARROW (Desktop Only) */}
+          <div className="hidden md:flex absolute left-10 top-1/2 -translate-y-1/2 z-10 cursor-pointer">
             <ArrowIcon className="rotate-180 w-8 h-8 text-gray-700" />
           </div>
 
-          <div className="flex items-center justify-center gap-6 w-full px-4">
-            <Cards
-              image={cardImages[0]}
-              className="w-56 md:w-64"
-              height="250px"
-              bottomBox={{
-                title: "Dyson Air Treatment Pro II",
-                description: "Air Treatment | Dyson® Official Website",
-              }}
-            />
+          {/* Cards Wrapper */}
+          <div
+            className="
+        flex items-center gap-6 px-4
+        overflow-x-auto scrollbar-hide
+        snap-x snap-mandatory
+        md:overflow-visible md:justify-center
+      "
+          >
+            <div className="snap-center shrink-0">
+              <Cards
+                image={cardImages[0]}
+                className="w-64 sm:w-60 md:w-64"
+                height="260px"
+                bottomBox={{
+                  title: "Dyson Air Treatment Pro II",
+                  description: "Air Treatment | Dyson® Official Website",
+                }}
+              />
+            </div>
 
-            <Cards
-              image="/iphone.png"
-              className="w-56 md:w-64"
-              height="320px"
-              bottomBox={{
-                title: "iPhone 17 Pro",
-                description: "Buy iPhone 17 Pro and iPhone 17 Pro Max - Apple (IN)",
-              }}
-            />
+            <div className="snap-center shrink-0">
+              <Cards
+                image="/iphone.png"
+                className="w-64 sm:w-60 md:w-64"
+                height="320px"
+                bottomBox={{
+                  title: "iPhone 17 Pro",
+                  description:
+                    "Buy iPhone 17 Pro and iPhone 17 Pro Max - Apple (IN)",
+                }}
+              />
+            </div>
 
-            <Cards
-              image={cardImages[2]}
-              className="w-56 md:w-64"
-              height="250px"
-              bottomBox={{
-                title: "Samsung S22+",
-                description: "Explore New Samsung Galaxy Mobiles Online | Samsung India",
-              }}
-            />
+            <div className="snap-center shrink-0">
+              <Cards
+                image={cardImages[2]}
+                className="w-64 sm:w-60 md:w-64"
+                height="260px"
+                bottomBox={{
+                  title: "Samsung S22+",
+                  description:
+                    "Explore New Samsung Galaxy Mobiles Online | Samsung India",
+                }}
+              />
+            </div>
           </div>
 
-          <div className="absolute right-20 z-10 cursor-pointer">
+          {/* RIGHT ARROW (Desktop Only) */}
+          <div className="hidden md:flex absolute right-10 top-1/2 -translate-y-1/2 z-10 cursor-pointer">
             <ArrowIcon className="w-8 h-8 text-gray-700" />
           </div>
         </div>
       ),
     },
 
-    { label: "Restaurant", content: <div className="mt-6">Restaurant Content</div> },
-    { label: "Pet Food", content: <div className="mt-6">Pet Food Content</div> },
+    {
+      label: "Restaurant",
+      content: <div className="mt-6">Restaurant Content</div>,
+    },
+    {
+      label: "Pet Food",
+      content: <div className="mt-6">Pet Food Content</div>,
+    },
     { label: "Spices", content: <div className="mt-6">Spices Content</div> },
   ];
 
