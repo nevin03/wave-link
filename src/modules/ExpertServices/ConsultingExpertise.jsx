@@ -65,7 +65,7 @@ const ConsultingExpertise = () => {
 
         <div className="w-full lg:w-1/2 flex justify-center items-start">
           <Cards
-            image="/consulting-exp-image.png"
+            image="/persons/5.png"
             height="250px sm:300px lg:350px"
             className="w-full sm:w-4/5 lg:w-full"
           />
