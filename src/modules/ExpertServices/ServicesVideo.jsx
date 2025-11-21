@@ -27,7 +27,7 @@ const ServicesVideo = ({ src = "/videos/meeting-video.mp4" }) => {
 
       {!isPlaying && (
         <button
-          className="absolute inset-0 flex items-center justify-center z-50"
+          className="absolute inset-0 flex items-center justify-center z-10"
           onClick={(e) => {
             const video = e.currentTarget.previousSibling;
             video.play();
@@ -35,7 +35,7 @@ const ServicesVideo = ({ src = "/videos/meeting-video.mp4" }) => {
           }}
         >
           <PlayButton
-            width={120} 
+            width={120}
             height={120}
           />
         </button>
