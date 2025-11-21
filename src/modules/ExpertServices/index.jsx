@@ -42,7 +42,7 @@ const ExpertServices = () => {
       </div>
 
       <ConsultingExpertise />
-      <div className="bg-white"><ServicesVideo/></div>
+      <div className="bg-white"><ServicesVideo /></div>
     </div>
   );
 };
