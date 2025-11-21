@@ -1,6 +1,5 @@
 import React from "react";
 import Typography from "../Typography";
-import Button from "../Button";
 
 const ImageCard = ({
   image,
@@ -32,14 +31,6 @@ const ImageCard = ({
               {content}
             </Typography>
           )}
-
-          <Button
-            variant="filled"
-            className="mt-4"
-            onClick={onButtonClick}
-          >
-            {buttonText}
-          </Button>
         </div>
       </div>
     </div>
