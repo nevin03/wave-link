@@ -9,8 +9,8 @@ import ServicesVideo from "./ServicesVideo";
 
 const ExpertServices = () => {
   return (
-    <div className="bg-white relative py-5">
-      <div className="relative flex flex-col items-center gap-4">
+    <div className="bg-white relative py-10 md:py-16">
+      <div className="relative flex flex-col items-center gap-4 px-4">
         <div className="bg-white border border-[#C6853F] px-6 py-2 rounded-full shadow-sm cursor-default">
           <Typography variant="content2" className="text-[#C6853F] font-semibold">
             What keeps us on Top
@@ -24,7 +24,7 @@ const ExpertServices = () => {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 px-4 md:px-6 mt-8">
         {expertImages.map((img, idx) => (
           <div
             key={idx}
@@ -42,7 +42,7 @@ const ExpertServices = () => {
       </div>
 
       <ConsultingExpertise />
-      <div className="bg-white"><ServicesVideo/></div>
+      <div className="bg-white"><ServicesVideo /></div>
     </div>
   );
 };

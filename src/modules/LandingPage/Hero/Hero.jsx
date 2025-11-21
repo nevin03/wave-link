@@ -9,7 +9,7 @@ export default function Hero() {
 
   return (
     <div className="min-h-[calc(100vh-72px)] bg-[radial-gradient(800px_at_bottom_left,#2C1F05,rgba(0,0,0,0.95))] text-white flex items-center overflow-hidden">
-      <div className="max-w-7xl mx-auto w-full px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto w-full px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Left Content */}
         <div className="space-y-8 z-10">
           <div className="inline-block bg-gray-800/50 text-gray-300 px-4 py-2 rounded-full text-sm backdrop-blur-sm border border-gray-700">

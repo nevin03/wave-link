@@ -10,24 +10,24 @@ const CounterLandingPage = () => {
   const router = useRouter();
 
   return (
-    <div className="bg-white pb-30 pt-10 pl-20 pr-10">
+    <div className="bg-white pb-20 pt-10 px-4 md:px-10 lg:px-20">
       {/* Heading */}
-      <div className="mb-20">
+      <div className="mb-10 md:mb-20">
         <Typography
           text="Consulting Expertise That Drives Real Growth"
           variant="heading1"
-          className="text-[#063231] font-bold"
+          className="text-[#063231] font-bold text-2xl md:text-3xl lg:text-4xl"
         />
       </div>
 
       {/* Cards */}
-      <div className="flex gap-6 flex-wrap justify-between">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <CustomCard
-        count="430+"
-        label="Counters"
-        TopIcon={MessageIcon}
-        bottomText="view more counters"
-        link="/counters"  
+          count="430+"
+          label="Counters"
+          TopIcon={MessageIcon}
+          bottomText="view more counters"
+          link="/counters"
         />
 
         <CustomCard
