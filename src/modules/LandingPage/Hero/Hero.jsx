@@ -41,7 +41,7 @@ export default function Hero() {
               radius="full"
               variant="orange"
             >
-              Free Consultation
+              Contact Us
             </Button>
             <Button
               variant="orange-outline"
