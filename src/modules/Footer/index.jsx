@@ -1,6 +1,7 @@
 import React from "react";
-import Typography from "@/shared/components/Typography/index";
-import { MapsIcon, MessageIcon } from "@/shared/components/Icons/index";
+import Link from "next/link"; // ← make sure this is imported
+import Typography from "@/shared/components/Typography";
+import { MapsIcon, MessageIcon } from "@/shared/Components/Icons";
 
 const Footer = () => {
   return (
@@ -28,6 +29,7 @@ const Footer = () => {
           />
         </div>
 
+        {/* Quick Links */}
         <div>
           <Typography
             variant="heading6"
@@ -36,13 +38,30 @@ const Footer = () => {
           />
 
           <ul className="space-y-2 text-sm">
-            <li><a href="/" className="hover:text-orange-400 transition">Home</a></li>
-            <li><a href="/about" className="hover:text-orange-400 transition">About Us</a></li>
-            <li><a href="/services" className="hover:text-orange-400 transition">Services</a></li>
-            <li><a href="/case-studies" className="hover:text-orange-400 transition">Case Studies</a></li>
+            <li>
+              <Link href="/" className="hover:text-orange-400 transition">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="hover:text-orange-400 transition">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link href="/services" className="hover:text-orange-400 transition">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link href="/case-studies" className="hover:text-orange-400 transition">
+                Case Studies
+              </Link>
+            </li>
           </ul>
         </div>
 
+        {/* Resources */}
         <div>
           <Typography
             variant="heading6"
@@ -51,12 +70,30 @@ const Footer = () => {
           />
 
           <ul className="space-y-2 text-sm">
-            <li><a href="/contact" className="hover:text-orange-400 transition">Contact Us</a></li>
-            <li><a href="/reviews" className="hover:text-orange-400 transition">Reviews</a></li>
-            <li><a href="/404" className="hover:text-orange-400 transition">404 Error</a></li>
-            <li><a href="/license" className="hover:text-orange-400 transition">License</a></li>
+            <li>
+              <Link href="/contact" className="hover:text-orange-400 transition">
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link href="/reviews" className="hover:text-orange-400 transition">
+                Reviews
+              </Link>
+            </li>
+            <li>
+              <Link href="/404" className="hover:text-orange-400 transition">
+                404 Error
+              </Link>
+            </li>
+            <li>
+              <Link href="/license" className="hover:text-orange-400 transition">
+                License
+              </Link>
+            </li>
           </ul>
         </div>
+
+        {/* Location & Contact */}
         <div className="space-y-4">
           <Typography
             variant="heading6"
@@ -66,7 +103,7 @@ const Footer = () => {
 
           <div className="space-y-3 text-sm">
             <div className="flex items-start gap-2">
-              <MapsIcon className="w-4 h-4mt-0.5 flex-shrink-0" />
+              <MapsIcon className="w-4 h-4 mt-0.5 flex-shrink-0" />
               <Typography
                 variant="body2"
                 className="text-gray-400"
@@ -74,6 +111,7 @@ const Footer = () => {
               />
             </div>
 
+            {/* Email */}
             <div className="flex items-center gap-2">
               <MessageIcon className="w-4 h-4 flex-shrink-0" />
               <a
@@ -84,6 +122,7 @@ const Footer = () => {
               </a>
             </div>
 
+            {/* Phone */}
             <div className="flex items-center gap-2">
               <a
                 href="tel:+919539346373"
@@ -96,9 +135,9 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Bottom bar */}
       <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-        
-        <div className="flex space-x-4 mb-4 md:mb-0">
+        <div className="flex space-x-6 mb-4 md:mb-0">
           <a href="#" className="hover:text-orange-400 transition">
             <Typography variant="body2" text="Facebook" />
           </a>
