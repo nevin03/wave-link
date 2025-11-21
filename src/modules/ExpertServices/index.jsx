@@ -11,7 +11,7 @@ const ExpertServices = () => {
   return (
     <div className="bg-white relative py-5">
       <div className="relative flex flex-col items-center gap-4">
-        <div className="bg-white border border-[#C6853F] px-6 py-2 rounded-full shadow-sm cursor-default">
+        <div className="bg-white border mt-10 border-[#C6853F] px-6 py-2 rounded-full shadow-sm cursor-default">
           <Typography variant="content2" className="text-[#C6853F] font-semibold">
             What keeps us on Top
           </Typography>
@@ -20,7 +20,7 @@ const ExpertServices = () => {
         <Typography
           variant="heading2"
           text="Our Expert Services"
-          className="text-center mt-4 text-[#C6853F]"
+          className="text-center mt-4 text-[#C6853F] mb-10"
         />
       </div>
 
@@ -32,8 +32,8 @@ const ExpertServices = () => {
           >
             <ImageCard
               image={img.src}
-              title={img.title}
-              content={img.content}
+              // title={img.title}
+              // content={img.content}
               height="300px"
               className="w-full md:w-full"
             />
