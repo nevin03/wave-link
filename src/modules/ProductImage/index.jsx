@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import Typography from "@/shared/components/Typography";
-import Cards from "@/shared/components/Cards";
-import { ArrowIcon } from "@/shared/components/Icons";
-import Tabs from "@/shared/components/Tabs";
+import Typography from "@/shared/components/Typography/index";
+import Cards from "@/shared/components/Cards/index";
+import { ArrowIcon } from "@/shared/components/Icons/index";
+import Tabs from "@/shared/components/Tabs/index";
 
 const cardImages = ["/air-treatment.png", "/iphone.png", "/samsung.png"];
 

@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Typography from "@/Shared/Components/Typography";
-import ImageCard from "@/Shared/Components/ImageCard";
+import Typography from "@/shared/components/Typography/index";
+import ImageCard from "@/shared/components/ImageCard/index";
 import ConsultingExpertise from "./ConsultingExpertise";
 import expertImages from "@/data/expertImages";
 import ServicesVideo from "./ServicesVideo";

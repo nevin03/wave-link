@@ -1,7 +1,7 @@
 "use client";
 
 import TextHeading from "@/components/TextHeading/TextHeading";
-import Button from "@/shared/components/Button";
+import Button from "@/shared/components/Button/index";
 import LandingImage from "@/components/LandingImage/LandingImage";
 
 export default function Hero() {
@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto w-full px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Left Content */}
         <div className="space-y-8 z-10">
-          <div className="inline-block bg-gray-800/50 text-gray-300 px-4 py-2 rounded-full text-sm backdrop-blur-sm border border-gray-700">
+          <div className="hidden sm:inline-block bg-gray-800/50 text-gray-300 px-4 py-2 rounded-full text-sm backdrop-blur-sm border border-gray-700">
             Welcome to Business X
           </div>
 
@@ -28,7 +28,7 @@ export default function Hero() {
             isAnimation={true}
           />
 
-          <p className="text-gray-400 text-lg leading-relaxed max-w-md">
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed max-w-md">
             Elevate your business with Businezz X, a professional Webflow
             template.
           </p>

@@ -4,9 +4,9 @@ import './TextHeading.css';
 
 export default function TextHeading({ text, size = 'lg', isAnimation = false }) {
   const sizeClasses = {
-    sm: 'text-2xl md:text-3xl lg:text-2xl',
-    md: 'text-3xl md:text-4xl lg:text-3xl',
-    lg: 'text-5xl md:text-6xl lg:text-5xl',
+    sm: 'text-xl sm:text-2xl md:text-3xl lg:text-2xl',
+    md: 'text-2xl sm:text-3xl md:text-4xl lg:text-3xl',
+    lg: 'text-3xl sm:text-5xl md:text-6xl lg:text-5xl',
   };
 
   const animationClass = isAnimation ? 'animate-glow-float' : 'animate-glow';

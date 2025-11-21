@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { PlayButton } from "@/shared/components/Icons";
+import { PlayButton } from "@/shared/components/Icons/index";
 
 const ServicesVideo = ({ src = "/videos/meeting-video.mp4" }) => {
   const [isPlaying, setIsPlaying] = useState(false);
