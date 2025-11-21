@@ -1,8 +1,8 @@
 "use client"
 
-import CustomCard from '@/shared/components/CustomCard/index'
-import { MessageIcon } from '@/shared/components/Icons/index'
-import Typography from '@/shared/components/Typography/index'
+import CustomCard from '@/shared/components/CustomCard'
+import { MessageIcon } from '@/shared/components/Icons'
+import Typography from '@/shared/components/Typography'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
