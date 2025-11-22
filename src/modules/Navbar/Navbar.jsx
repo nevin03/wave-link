@@ -18,8 +18,8 @@ export default function Navbar() {
 
   return (
     <>
-      {/* NAVBAR */}
-      <nav className="bg-black text-white px-4 sm:px-6 py-3 flex items-center justify-between border-b border-gray-800/50 backdrop-blur-md sticky top-0 z-[100000]">
+      {/* NAVBAR - removed 'sticky' class, using 'fixed' instead */}
+      <nav className="bg-black text-white px-4 sm:px-6 py-3 flex items-center justify-between border-b border-gray-800/50 backdrop-blur-md fixed top-0 left-0 right-0 z-[100000]">
         {/* Logo */}
         <div className="flex items-center">
           <img
@@ -78,14 +78,14 @@ export default function Navbar() {
       {/* MOBILE SIDEBAR OVERLAY */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-999"
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[99999]"
           onClick={() => setIsOpen(false)}
         />
       )}
 
       {/* MOBILE SLIDE MENU */}
       <div
-        className={`fixed top-0 right-0 h-full w-72 sm:w-80 bg-black border-l border-gray-800 z-1000 transition-transform duration-300 ease-out p-6 flex flex-col gap-6 ${
+        className={`fixed top-0 right-0 h-full w-72 sm:w-80 bg-black border-l border-gray-800 z-[100001] transition-transform duration-300 ease-out p-6 flex flex-col gap-6 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
