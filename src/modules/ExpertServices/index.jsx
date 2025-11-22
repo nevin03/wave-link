@@ -12,7 +12,10 @@ const ExpertServices = () => {
     <div className="bg-white relative py-5">
       <div className="relative flex flex-col items-center gap-4">
         <div className="bg-white border mt-10 border-[#C6853F] px-6 py-2 rounded-full shadow-sm cursor-default">
-          <Typography variant="content2" className="text-[#C6853F] font-semibold">
+          <Typography
+            variant="content2"
+            className="text-[#C6853F] font-semibold"
+          >
             What keeps us on Top
           </Typography>
         </div>
@@ -24,11 +27,13 @@ const ExpertServices = () => {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className=" p-2 sm: max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
         {expertImages.map((img, idx) => (
           <div
             key={idx}
-            className={`flex ${idx % 2 === 0 ? "justify-start" : "justify-end"} rounded-2xl overflow-hidden`}
+            className={`flex ${
+              idx % 2 === 0 ? "justify-start" : "justify-end"
+            } rounded-2xl overflow-hidden`}
           >
             <ImageCard
               image={img.src}
@@ -36,13 +41,18 @@ const ExpertServices = () => {
               // content={img.content}
               height="300px"
               className="w-full md:w-full"
+              buttonText="Visit Website"
+             onButtonClick={() => window.open("https://www.google.com", "_blank")}
+
             />
           </div>
         ))}
       </div>
 
       <ConsultingExpertise />
-      <div className="bg-white"><ServicesVideo /></div>
+      <div className="bg-white">
+        <ServicesVideo />
+      </div>
     </div>
   );
 };
