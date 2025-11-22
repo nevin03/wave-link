@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="bg-black text-white px-4 sm:px-6 py-3 flex items-center justify-between border-b border-gray-800/50 backdrop-blur-md sticky top-0 z-999">
+      <nav className="bg-black text-white px-4 sm:px-6 py-3 flex items-center justify-between border-b border-gray-800/50 backdrop-blur-md sticky top-0 z-[100000]">
         {/* Logo */}
         <div className="flex items-center">
           <img

@@ -31,3 +31,20 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* FIXED: Apply overflow-x only to html, not body */
+html {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  /* Remove overflow-x: hidden from body to allow sticky positioning */
+}
+
+* {
+  box-sizing: border-box;
+}
