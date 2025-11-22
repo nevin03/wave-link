@@ -54,7 +54,7 @@ export default function Hero() {
           </div>
         </div>
         {/* Right Image */}
-        <LandingImage imageUrl={heroImageUrl} />
+        <LandingImage  imageUrl={heroImageUrl} />
       </div>
 
       <style jsx>{`

@@ -1,12 +1,12 @@
 
 export default function LandingImage({ imageUrl }) {
   return (
-    <div className="relative lg:absolute lg:right-0 lg:w-[55%] lg:h-[600px]">
+    <div className=" p-3 sm:  relative lg:absolute lg:right-0 lg:w-[55%] lg:h-[600px]">
       {/* --- Stack Layer 1 (furthest back - left side) --- */}
-      <div className="absolute -top-4 -left-8 w-full h-full rounded-3xl bg-gradient-to-tr from-[#212121]/30 to-[#212121]-900/30 backdrop-blur-sm border border-gray-700/20" />
+      <div className="m-3 sm:  absolute -top-4 -left-8 w-full h-full rounded-3xl bg-gradient-to-tr from-[#212121]/30 to-[#212121]-900/30 backdrop-blur-sm border border-gray-700/20" />
 
       {/* --- Stack Layer 2 (middle - left side) --- */}
-      <div className="absolute -top-2 -left-4 w-full h-full rounded-3xl bg-gradient-to-tr from-[#404040]/40 to-[#404040]-900/40 backdrop-blur-sm border border-gray-800/40" />
+      <div className="m-3 sm:  absolute -top-2 -left-4 w-full h-full rounded-3xl bg-gradient-to-tr from-[#404040]/40 to-[#404040]-900/40 backdrop-blur-sm border border-gray-800/40" />
 
       {/* --- Main Image Container (front) --- */}
       <div

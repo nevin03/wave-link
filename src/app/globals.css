@@ -32,7 +32,7 @@ body {
   scrollbar-width: none;
 }
 
-/* FIXED: Apply overflow-x only to html, not body */
+/* Keep overflow-x hidden on html and body */
 html {
   width: 100%;
   max-width: 100vw;
@@ -42,9 +42,30 @@ html {
 body {
   width: 100%;
   position: relative;
-  /* Remove overflow-x: hidden from body to allow sticky positioning */
+  overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Force navbar to stay fixed - override sticky issues */
+nav[class*="sticky"] {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100000;
+}
+
+/* Add padding to body to prevent content from hiding under navbar */
+body {
+  padding-top: 52px; /* Mobile navbar height */
+}
+
+@media (min-width: 640px) {
+  body {
+    padding-top: 60px; /* Desktop navbar height */
+  }
 }

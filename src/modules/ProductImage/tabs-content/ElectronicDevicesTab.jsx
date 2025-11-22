@@ -19,6 +19,7 @@ const ElectronicDevicesTab = () => {
           overflow-x-auto scrollbar-hide
           snap-x snap-mandatory
           md:overflow-visible md:justify-center
+          overflow-y-hidden
         "
       >
         <div className="snap-center shrink-0">
