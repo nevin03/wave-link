@@ -1,5 +1,6 @@
 import React from "react";
 import Typography from "../Typography";
+import Button from "../Button";
 
 const ImageCard = ({
   image,
@@ -8,6 +9,7 @@ const ImageCard = ({
   buttonText = "",
   onButtonClick = () => {},
   className = "",
+  height = "auto",
 }) => {
   return (
     <div className={`w-full md:w-1/2 ${className}`}>
@@ -15,14 +17,17 @@ const ImageCard = ({
         <img
           src={image}
           alt={title}
-          className="w-full h-auto rounded-2xl"
+          style={{ height }}
+          className="w-full object-cover rounded-2xl"
         />
 
-        <div className="absolute top-4 left-4 flex flex-col items-start text-left">
-          <Typography variant="heading3" className="text-white drop-shadow-md">
-            {title}
-          </Typography>
-
+        {/* Title & description same positioning */}
+        <div className="absolute top-4 left-4 flex flex-col items-start text-left max-w-[65%]">
+          {title && (
+            <Typography variant="heading3" className="text-white drop-shadow-md">
+              {title}
+            </Typography>
+          )}
           {content && (
             <Typography
               variant="content2"
@@ -32,6 +37,20 @@ const ImageCard = ({
             </Typography>
           )}
         </div>
+
+        {/* Visit Website Button positioned like screenshot */}
+        {buttonText && (
+          <div className="absolute left-4 bottom-6">
+            <Button
+              variant="filled"
+              size="sm"
+              radius="full"
+              onClick={onButtonClick}
+            >
+              {buttonText}
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );
