@@ -9,9 +9,15 @@ const Clients = () => {
 
   return (
     <div className="w-full mb-20">
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      {/* Mobile: Row scroll | Desktop: Grid */}
+      <div
+        className="
+          flex gap-6 overflow-x-auto scrollbar-hide
+          md:grid md:grid-cols-3 md:overflow-visible
+        "
+      >
         {images.map((img, idx) => (
-          <div key={idx} className="w-full overflow-hidden">
+          <div key={idx} className="min-w-[200px] md:min-w-0 overflow-hidden">
             <img
               src={img}
               alt={`client-${idx}`}
@@ -20,6 +26,7 @@ const Clients = () => {
           </div>
         ))}
       </div>
+
     </div>
   );
 };
